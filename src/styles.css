@@ -102,6 +102,40 @@ h1 {
   padding: 22px;
 }
 
+.auth-panel {
+  margin-bottom: 20px;
+}
+
+.auth-form,
+.auth-status {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr auto;
+  gap: 14px;
+  align-items: end;
+}
+
+.auth-status {
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.auth-form h2,
+.auth-status h2 {
+  margin-bottom: 6px;
+}
+
+.auth-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.muted {
+  color: #aab3c5;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
 .form-header {
   display: flex;
   justify-content: space-between;
@@ -354,6 +388,12 @@ h3 {
 
   .search {
     max-width: none;
+  }
+
+  .auth-form,
+  .auth-status {
+    grid-template-columns: 1fr;
+    align-items: stretch;
   }
 
   .form-grid {
